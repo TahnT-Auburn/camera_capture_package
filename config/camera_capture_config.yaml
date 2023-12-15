@@ -1,0 +1,49 @@
+#TRI028S-CC
+camera1:
+  camera_capture:
+    ros__parameters:
+      serial: "223600392"
+      pixelformat: "rgb8"
+      width: 1280 #1440 #1280 #1920   
+      height: 720 #1080 #720  #1080  
+      gain: 40.0
+      exposure_time: 4000.0 
+      stream_auto_negotiate_packet_size: true
+      stream_packet_resend_enable: true
+      image_save_path: "/home/tahnt/T3_Repos/camera_packages/ros2_ws/src/camera_calibration_package/calibration_images/TRI028S_CC_1280x720"
+      image_save_name: "/calib_img"
+      image_save_ext: ".jpg"
+
+#TRI054S-CC
+camera2:
+  camera_capture:
+    ros__parameters:
+      serial: "223302308"
+      pixelformat: "rgb8"
+      width: 1936 #1440 #1280 #1920   
+      height: 1464 #1080 #720  #1080  
+      gain: 42.0
+      exposure_time: 4000.0
+      stream_auto_negotiate_packet_size: true
+      stream_packet_resend_enable: true
+      #specify path directly to calibration images folder
+      image_save_path: "/home/tahnt/Documents/camera_calibration/ros2_ws/src/camera_calibration_package/images/TRI054S_CC"
+      image_save_name: "/calib_img"
+      image_save_ext: ".jpg"
+
+#TRI028S-MC
+camera3:
+  camera_capture:
+    ros__parameters:
+      serial: "223301667"
+      pixelformat: "mono8"
+      width: 1936 #1440 #1280 #1920   
+      height: 1464 #1080 #720  #1080  
+      gain: 0.0
+      exposure_time: 4000.0
+      stream_auto_negotiate_packet_size: true
+      stream_packet_resend_enable: true
+      #specify path directly to calibration images folder
+      image_save_path: "/home/tahnt/Documents/camera_calibration/ros2_ws/src/camera_calibration_package/images/TRI028S_MC"
+      image_save_name: "/calib_img"
+      image_save_ext: ".jpg"  
